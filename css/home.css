@@ -521,7 +521,7 @@ form textarea {
   .about {
     flex-direction: column-reverse;
   }
-  .about img {
+  .about video {
     width: 70vw;
     margin-top: 4rem;
   }
@@ -584,7 +584,7 @@ form textarea {
   .home-img img {
     width: 90vw;
   }
-  .about-img img {
+  .about-img video {
     width: 90vw;
   }
 }
