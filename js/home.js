@@ -44,6 +44,10 @@ const typed = new Typed('.multiple-txt', {
    backDelay: 1000, //kiek laiko palaukti ir tada grizti
    loop: true
 });
+
+
+
+
 // header-end
 
 // home-start
