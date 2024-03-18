@@ -21,6 +21,11 @@ html {
   overflow-x: hidden;
 }
 
+/* .darkmode {
+  background: #5d5537;
+  color: var(--text-color);
+} */
+
 section {
   min-height: 100vh;
   padding: 11rem 9% 2rem;
@@ -59,6 +64,18 @@ section {
   margin-left: 4rem;
   transition: 0.2s;
   font-weight: 600;
+}
+
+.navbar button {
+  margin-left: 4rem;
+  padding: 0.5rem;
+  background: var(--main-bg-color);
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.navbar button i {
+  color: var(--text-color);
 }
 
 .navbar a:hover,
