@@ -686,6 +686,9 @@ form textarea {
   .services-container {
     grid-template-columns: 1fr;
   }
+  .faq .subtitle {
+    text-align: center;
+  }
   .acordion-wrapper {
     width: 100%;
   }
