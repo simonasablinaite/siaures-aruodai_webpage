@@ -17,7 +17,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62%;
   overflow-x: hidden;
 }
 
@@ -167,6 +167,22 @@ section {
   width: 85%;
 }
 /* About-end */
+
+/* Webcam start */
+#webcam-container {
+  margin: 0 auto;
+  width: 500px;
+  height: 375px;
+  background: var(--second-bg-color);
+  border: 2px solid var(--main-bg-color);
+  float: left; /*mano pridetas stilius*/
+}
+
+#video-element {
+  width: 500px;
+  height: 375px;
+}
+/* Webcam end */
 
 /* Services-start */
 .services-container {
@@ -539,11 +555,17 @@ form textarea {
   html {
     font-size: 55%;
   }
+  .navbar a {
+    margin-left: 3rem;
+  }
 }
 
 @media (max-width: 992px) {
   .header {
     padding: 2rem 3%;
+  }
+  .navbar a {
+    margin-left: 2rem;
   }
   section {
     padding: 10rem 3% 2rem;
@@ -635,6 +657,12 @@ form textarea {
 @media (max-width: 576px) {
   /*617*/
   /*pabandyti pakeisti i 576 arba visai istrinti, o info perkelti i kita breakpointa*/
+  #webcam-container {
+    width: 100%;
+  }
+  #video-element {
+    width: 100%;
+  }
   .services-container {
     grid-template-columns: 1fr;
   }

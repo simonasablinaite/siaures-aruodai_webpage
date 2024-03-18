@@ -56,6 +56,23 @@ const typed = new Typed('.multiple-txt', {
 // about-start
 // about-end
 
+// webcam-start
+// let video = document.querySelector("#video-element");
+
+// if (navigator.mediaDevices.getUserMedia) {
+//    navigator.mediaDevices
+//       .getUserMedia({ video: false })
+//       .then((stream) => {
+//          video.srcObject = stream;
+//       })
+//       .catch((error) => {
+//          console.log(error);
+//       })
+// } else {
+//    console.log("Deja \"getUsermedia nepalaikomas!\"");
+// }
+// webcam-end
+
 // services-start
 // services-end
 
@@ -86,6 +103,6 @@ ScrollReveal({
 
 
 ScrollReveal().reveal('.home-content, .heading, .subtitle, .faq p', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .acordion-wrapper', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .acordion-wrapper, #webcam-container', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img, .webcam .heading', { origin: 'left' });
 ScrollReveal().reveal('.about-content p, .about-content, .our-contact', { origin: 'right' });
