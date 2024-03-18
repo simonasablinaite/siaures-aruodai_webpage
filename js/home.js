@@ -62,7 +62,7 @@ let video = document.querySelector("#video-element");
 if (navigator.mediaDevices.getUserMedia) {
    navigator.mediaDevices
       .getUserMedia({
-         video: true,
+         video: false,
       })
       .then((stream) => {
          video.srcObject = stream;
