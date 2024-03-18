@@ -57,20 +57,23 @@ const typed = new Typed('.multiple-txt', {
 // about-end
 
 // webcam-start
-// let video = document.querySelector("#video-element");
+let video = document.querySelector("#video-element");
 
-// if (navigator.mediaDevices.getUserMedia) {
-//    navigator.mediaDevices
-//       .getUserMedia({ video: false })
-//       .then((stream) => {
-//          video.srcObject = stream;
-//       })
-//       .catch((error) => {
-//          console.log(error);
-//       })
-// } else {
-//    console.log("Deja \"getUsermedia nepalaikomas!\"");
-// }
+if (navigator.mediaDevices.getUserMedia) {
+   navigator.mediaDevices
+      .getUserMedia({
+         video: true,
+      })
+      .then((stream) => {
+         video.srcObject = stream;
+         audio.srcObject = stream;
+      })
+      .catch((error) => {
+         console.log(error);
+      })
+} else {
+   console.log("Deja \"getUsermedia nepalaikomas!\"");
+}
 // webcam-end
 
 // services-start
