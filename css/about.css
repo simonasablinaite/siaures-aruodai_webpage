@@ -1,0 +1,23 @@
+.about-img img {
+  width: 45vw;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .about-img video {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+  .about-img img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .about-img video {
+    width: 100%;
+  }
+  .about-img img {
+    width: 100%;
+  }
+}

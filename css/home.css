@@ -620,7 +620,7 @@ form textarea {
   .about {
     flex-direction: column-reverse;
   }
-  .about video {
+  .about-img video {
     width: 70vw;
     margin-top: 4rem;
   }
@@ -657,6 +657,9 @@ form textarea {
 @media (max-width: 576px) {
   /*617*/
   /*pabandyti pakeisti i 576 arba visai istrinti, o info perkelti i kita breakpointa*/
+  .about-img video {
+    width: 100%;
+  }
   #webcam-container {
     width: 100%;
   }
